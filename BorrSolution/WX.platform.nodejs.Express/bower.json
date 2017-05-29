@@ -1,0 +1,20 @@
+{
+  "name": "leanclound",
+  "description": "",
+  "main": "",
+  "authors": [
+    "wxl"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "weui": "^1.1.2"
+  }
+}

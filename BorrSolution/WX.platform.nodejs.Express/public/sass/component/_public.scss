@@ -1,0 +1,12 @@
+@import 'common';
+/*************************** 自定义公共样式  ***************************/
+
+body{
+	margin: 0 auto;
+	max-width: 640px;
+	background: $colorecebf4;
+}
+
+a:active,a:hover{
+	background: #f7f5f5;
+}

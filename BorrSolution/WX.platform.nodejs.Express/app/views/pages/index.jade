@@ -1,4 +1,28 @@
 extend ../layout
-
 block content
-	p #{title}
+	.weui-flex
+		a.weui-flex__item.i-box(href="#")
+			.i-placeholer 
+				i.weui-icon-loan
+				p 我的借款
+		a.weui-flex__item.i-box(href="#")
+			.i-placeholer
+				i.weui-icon-loanlist
+				p 付款记录
+			span.weui-badge 8
+				//- <span class="weui-badge" style="position: absolute;top: -.4em;right: -.4em;">8</span>
+		a.weui-flex__item.i-box(href="#")
+			.i-placeholer
+				i.weui-icon-profile
+				p 个人资料
+	.weui-flex
+		a.weui-flex__item.i-box(href="#")
+			.i-placeholer 
+				i.weui-icon-coupon
+				p 优惠券
+		a.weui-flex__item.i-box(href="#")
+			.i-placeholer 
+				i.weui-icon-dashboard
+				p 管理后台
+		.weui-flex__item
+	

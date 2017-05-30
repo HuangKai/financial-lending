@@ -9,15 +9,15 @@ var gulp = require('gulp'),
     livereload  = require('gulp-livereload'), // 自动刷新
     lazypipe    = require('lazypipe'), // 可以使stream 链分离
     //configuration
-    webapp_path = 'public';
+    webapp_path = './public';
 
 var errorHandler = function(err){
   console.log(err);
   this.emit('end');
 };
 
-var cssSrc = webapp_path + '/sass/*.scss',
-    jsSrc = webapp_path + '/js/**/*.js';
+var cssSrc = webapp_path + '/sass/**/*.scss',
+    jsSrc = webapp_path + '/js/*.js';
 
 gulp.task('default', ['sass', 'js'], function(){
 
@@ -34,6 +34,7 @@ gulp.task('sass', function(){
     .pipe(sourcemap.write())
     .pipe(gulp.dest(webapp_path + '/build/css'))
     .pipe(livereload());
+    console.log('sass')
 });
 
 gulp.task('js', function() {
@@ -41,7 +42,7 @@ gulp.task('js', function() {
     .pipe(plumber(errorHandler))
     .pipe(lazypipe().pipe(uglify)())
     .pipe(gulp.dest(webapp_path + '/build/js'))
-    .pipe(liverelaod());
+    .pipe(livereload());
 });
 
 
@@ -52,6 +53,6 @@ gulp.task('clean', function() {
 });
 
 gulp.task('watch', ['default'], function () {
-  gulp.watch(webapp_path + '/sass/*.scss',      ['sass']);
-  gulp.watch(webapp_path + '/src/js/**/*.js',   ['js']);
+  gulp.watch(webapp_path + '/sass/**/*.scss',      ['sass']);
+  gulp.watch(webapp_path + '/js/**/*.js',   ['js']);
 });

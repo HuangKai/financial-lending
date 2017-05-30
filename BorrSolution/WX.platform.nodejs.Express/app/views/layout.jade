@@ -4,7 +4,7 @@ html
 		meta(charset="utf-8")
 		title #{title}
 		include ./includes/headCloud
-	body
+	body(onload="document.documentElement.style.fontSize = document.documentElement.clientWidth /18.75 + 'px';")
 		include ./includes/header
 		block content
 		include ./includes/footer

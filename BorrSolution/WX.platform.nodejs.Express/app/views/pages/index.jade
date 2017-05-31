@@ -1,28 +1,24 @@
 extend ../layout
 block content
-	.weui-flex
-		a.weui-flex__item.i-box(href="#")
-			.i-placeholer 
-				i.weui-icon-loan
-				p 我的借款
-		a.weui-flex__item.i-box(href="#")
-			.i-placeholer
-				i.weui-icon-loanlist
-				p 付款记录
-			span.weui-badge 8
-				//- <span class="weui-badge" style="position: absolute;top: -.4em;right: -.4em;">8</span>
-		a.weui-flex__item.i-box(href="#")
-			.i-placeholer
-				i.weui-icon-profile
-				p 个人资料
-	.weui-flex
-		a.weui-flex__item.i-box(href="#")
-			.i-placeholer 
-				i.weui-icon-coupon
-				p 优惠券
-		a.weui-flex__item.i-box(href="#")
-			.i-placeholer 
-				i.weui-icon-dashboard
-				p 管理后台
-		.weui-flex__item
-	
+	.weui-grids.i-content
+		a.weui-grid(href="/myloan")
+			.weui-grid__icon
+				img(src="./img/icon-home-loan-normal.png")
+			p.weui-grid__label.front-14 我要借款
+			span.weui-badge.front-12 8
+		a.weui-grid(href="javascript:;")
+			.weui-grid__icon
+				img(src="./img/icon-home-loan_list-normal.png")
+			p.weui-grid__label.front-14 付款记录
+		a.weui-grid(href="javascript:;")
+			.weui-grid__icon
+				img(src="./img/icon-home-profile-normal.png")
+			p.weui-grid__label.front-14 人个资料
+		a.weui-grid(href="javascript:;")
+			.weui-grid__icon
+				img(src="./img/icon-home-coupon-normal.png")
+			p.weui-grid__label.front-14 优惠券
+		a.weui-grid(href="javascript:;")
+			.weui-grid__icon
+				img(src="./img/icon-home-dashboard-normal.png")
+			p.weui-grid__label.front-14 管理后台

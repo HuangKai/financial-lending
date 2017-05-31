@@ -1,0 +1,23 @@
+extend ../layout
+block content
+	.m-content
+		.page__bd
+			.weui-cells__title 借款金额
+			.weui-cells.weui-cells_radio
+				label.weui-cell.weui-check__label(for="money1")
+					.weui-cell__bd
+						p ￥1000
+					.weui-cell__ft
+						input.weui-check(type="radio", name="loanmoney1" id="money1")
+						span.weui-icon_checked
+				label.weui-cell.weui-check__label(for="money2")
+					.weui-cell__bd
+						p ￥2000
+					.weui-cell__ft
+						input.weui-check(type="radio", name="loanmoney2" id="money2")
+						span.weui-icon_checked
+				label.weui-cell.disable(for="money3")
+					.weui-cell__bd
+						p ￥3000
+					.weui-cell__ft
+						span.weui-icon-info-circle

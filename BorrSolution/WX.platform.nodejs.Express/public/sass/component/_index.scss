@@ -1,56 +1,21 @@
 @import 'common';
-.weui-flex .i-box:last-child {
-    border-right: 0;
+@media screen and (min-width:400px) {
+    .i-content .weui-grid {
+        padding: 30px 10px;
+    }
 }
 
-.i-box {
-	position: relative;
-    height: (250rem / $fontRemBase);
-    text-align: center;
-    border-right: 1px solid $colordbdbdb;
-    border-bottom: 1px solid $colordbdbdb;
-    background: #fff;
-    font-size: 32rem / $fontRemBase;
+.i-content {
+    & > .weui-grid {
+        background: #fff;
+    }
     .weui-badge {
         position: absolute;
-        top: 20rem / $fontRemBase;
-        right: 20rem / $fontRemBase;
-        font-size: 16px;
+        top: 15px;
+        right: 15px;
     }
-}
-
-.i-placeholer {
-    display: inline-block;
-    color: #000;
-    margin-top: (250rem / $fontRemBase - 78rem / $fontRemBase) / 2 - 0.2rem;
-    p{
-    	padding-top: 6px;
+    .weui-grid__icon {
+        width: 25px;
+        height: 25px;
     }
-}
-
-@mixin i-icon(){
-	background-size: 36rem / $fontRemBase;
-	width: 36rem / $fontRemBase;
-	height: 36rem / $fontRemBase;
-}
-
-.weui-icon-loan{
-	background: url(../../img/icon-home-loan-normal.png) no-repeat center center;
-	@include i-icon();
-}
-.weui-icon-loanlist{
-	background: url(../../img/icon-home-loan_list-normal.png) no-repeat center center;
-	@include i-icon();
-}
-.weui-icon-profile{
-	background: url(../../img/icon-home-profile-normal.png) no-repeat center center;
-	@include i-icon();
-}
-.weui-icon-coupon{
-	background: url(../../img/icon-home-coupon-normal.png) no-repeat center center;
-	@include i-icon();
-}
-.weui-icon-dashboard{
-	background: url(../../img/icon-home-dashboard-normal.png) no-repeat center center;
-	@include i-icon();
 }

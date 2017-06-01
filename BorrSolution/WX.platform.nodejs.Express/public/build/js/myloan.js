@@ -1,0 +1,1 @@
+$(function(){function e(){i.removeClass("weui-actionsheet_toggle"),o.hide(200)}var i=$("#iosActionsheet"),o=$("#iosMask");o.on("click",e),$("#iosActionsheetCancel").on("click",e),$("#payAction").on("click",function(){i.addClass("weui-actionsheet_toggle"),o.show(200)}),$(".m-steplast").hide(200)});

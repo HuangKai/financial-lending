@@ -32,6 +32,12 @@
     <Compile Include="app.js" />
     <Compile Include="app\controllers\index.js" />
     <Compile Include="app\controllers\myloan.js" />
+    <Compile Include="app\dal\dao.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\dal\mysql\users.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="cloud.js" />
     <Compile Include="config\routes.js" />
     <Compile Include="gulpfile.js" />
@@ -281,6 +287,8 @@
   <ItemGroup>
     <Folder Include="app\" />
     <Folder Include="app\controllers\" />
+    <Folder Include="app\dal\" />
+    <Folder Include="app\dal\mysql\" />
     <Folder Include="app\views\" />
     <Folder Include="app\views\includes\" />
     <Folder Include="app\views\pages\" />

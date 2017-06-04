@@ -37,7 +37,7 @@ $(function() {
 
     // 提交信息
     $('.stepsubmit').on('click', function(){
-        window.location.href = '/status:success';
+        window.location.href = '/status/success';
     })
 
 });

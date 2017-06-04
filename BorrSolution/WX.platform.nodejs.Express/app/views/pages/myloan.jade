@@ -20,7 +20,7 @@ block content
 					.weui-cell__bd
 						p ￥3000
 					.weui-cell__ft
-						span.weui-icon-info-circle
+						span.weui-icon-info-circle.aa
 			.weui-cells__title 借款周期
 			.weui-cells.weui-cells_radio
 				label.weui-cell.weui-check__label(for="loantime")
@@ -55,15 +55,14 @@ block content
 					.weui-actionsheet__cell 银行卡
 				.weui-actionsheet__action
 					.weui-actionsheet__cell#iosActionsheetCancel 取消
-			.js_dialog#iosDialog1(style="display:none;")
-			.weui-mask
-			.weui-dialog
+			.weui-dialog#iosTip(style="display:none;")
 				.weui-dialog__hd
 					span.weui-dialog__title 即将开放
 				.weui-dialog__bd 敬请期待
 				.weui-dialog__ft
-					a.weui-dialog__btn.weui-dialog__btn_primary 确定
-		.page__bd.m-steplast
+					a.weui-dialog__btn.weui-dialog__btn_primary#isoTipSure 确定
+		//- 这里是显示订单详情
+		.page__bd.m-steplast.hide
 			.weui-form-preview.front-14
 				.weui-form-preview__hd
 					.weui-form-preview__item
@@ -89,6 +88,6 @@ block content
 						label.weui-form-preview__label 还款时间
 						span.weui-form-preview__value 2017-9-10 10:10:10
 				.weui-form-preview__ft
-					a.weui-form-preview__btn.weui-form-preview__btn_primary(href="javascript:;") 返回修改
+					a.weui-form-preview__btn.weui-form-preview__btn_primary.m-backedit(href="javascript:;") 返回修改
 			a.weui-btn.weui-btn_primary.stepsubmit(href="javascript:void(0);") 提交
 	script(type="text/javascript", src="/build/js/myloan.js")

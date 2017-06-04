@@ -41,11 +41,18 @@
     <Compile Include="cloud.js" />
     <Compile Include="config\routes.js" />
     <Compile Include="gulpfile.js" />
+    <Compile Include="public\build\js\myloan.js" />
+    <Compile Include="public\common\jweixin-1.0.0.js" />
+    <Compile Include="public\common\weui.js" />
+    <Compile Include="public\common\weui.min.js" />
+    <Compile Include="public\js\myloan.js" />
     <Compile Include="public\libs\weui\dist\example\example.js" />
     <Compile Include="public\libs\weui\dist\example\zepto.min.js" />
     <Compile Include="public\libs\weui\gulpfile.js" />
     <Compile Include="public\libs\weui\src\example\example.js" />
     <Compile Include="public\libs\weui\src\example\zepto.min.js" />
+    <Compile Include="public\libs\zepto\zepto.js" />
+    <Compile Include="public\libs\zepto\zepto.min.js" />
     <Compile Include="server.js" />
     <Content Include="app\views\includes\footer.jade" />
     <Content Include="app\views\includes\headCloud.jade" />
@@ -54,6 +61,7 @@
     <Content Include="app\views\pages\error.jade" />
     <Content Include="app\views\pages\index.jade" />
     <Content Include="app\views\pages\myloan.jade" />
+    <Content Include="app\views\pages\status.jade" />
     <Content Include="bower.json" />
     <Content Include="public\img\ntunnel_mysql.php" />
     <Content Include="db\wx.platform.borrowing.sql" />
@@ -279,6 +287,10 @@
     <Content Include="public\libs\weui\src\style\widget\weui-tips\weui-loadmore.less" />
     <Content Include="public\libs\weui\src\style\widget\weui-tips\weui-mask.less" />
     <Content Include="public\libs\weui\src\style\widget\weui-tips\weui-toast.less" />
+    <Content Include="public\libs\zepto\.bower.json" />
+    <Content Include="public\libs\zepto\bower.json" />
+    <Content Include="public\libs\zepto\component.json" />
+    <Content Include="public\libs\zepto\composer.json" />
     <Content Include="public\sass\component\_common.scss" />
     <Content Include="public\sass\component\_index.scss" />
     <Content Include="public\sass\component\_myloan.scss" />
@@ -299,7 +311,10 @@
     <Folder Include="public\" />
     <Folder Include="public\build\" />
     <Folder Include="public\build\css\" />
+    <Folder Include="public\build\js\" />
+    <Folder Include="public\common\" />
     <Folder Include="public\img\" />
+    <Folder Include="public\js\" />
     <Folder Include="public\libs\" />
     <Folder Include="public\libs\weui\" />
     <Folder Include="public\libs\weui\dist\" />
@@ -339,6 +354,7 @@
     <Folder Include="public\libs\weui\src\style\widget\weui-slider\" />
     <Folder Include="public\libs\weui\src\style\widget\weui-tab\" />
     <Folder Include="public\libs\weui\src\style\widget\weui-tips\" />
+    <Folder Include="public\libs\zepto\" />
     <Folder Include="public\sass\" />
     <Folder Include="public\sass\component\" />
   </ItemGroup>

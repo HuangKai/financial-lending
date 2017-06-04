@@ -55,6 +55,7 @@
     <Content Include="app\views\pages\index.jade" />
     <Content Include="app\views\pages\myloan.jade" />
     <Content Include="bower.json" />
+    <Content Include="db\ntunnel_mysql.php" />
     <Content Include="db\wx.platform.borrowing.sql" />
     <Content Include="package.json" />
     <Content Include="public\build\css\index.css" />

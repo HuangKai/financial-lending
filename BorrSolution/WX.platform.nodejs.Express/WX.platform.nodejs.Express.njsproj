@@ -55,6 +55,7 @@
     <Content Include="app\views\pages\index.jade" />
     <Content Include="app\views\pages\myloan.jade" />
     <Content Include="bower.json" />
+    <Content Include="db\wx.platform.borrowing.sql" />
     <Content Include="package.json" />
     <Content Include="public\build\css\index.css" />
     <Content Include="public\img\Fill .png" />
@@ -293,6 +294,7 @@
     <Folder Include="app\views\includes\" />
     <Folder Include="app\views\pages\" />
     <Folder Include="config\" />
+    <Folder Include="db\" />
     <Folder Include="public\" />
     <Folder Include="public\build\" />
     <Folder Include="public\build\css\" />

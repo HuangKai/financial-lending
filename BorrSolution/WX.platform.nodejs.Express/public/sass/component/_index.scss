@@ -1,0 +1,45 @@
+@import 'common';
+@media screen and (min-width:400px) {
+    .i-content .weui-grid {
+        padding: 30px 10px;
+    }
+}
+
+.i-content {
+    & > .weui-grid {
+        background: #fff;
+        &:active {
+            background: #f7f5f5;
+        }
+    }
+    .weui-badge {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    .weui-grid__icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+.status-tip{
+    margin: 45px 15px 0;
+    text-align: center;
+    .icon-box__title{
+        padding-top: 20px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .icon-box__desc{
+        font-size: 14px;
+        padding-top: 15px;
+        padding-bottom: 30px;
+        color: #888;
+    }
+
+    &.status-waitrepayment .weui-icon-waiting{
+        color: #FFBE00;
+    }
+}

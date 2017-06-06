@@ -1,0 +1,23 @@
+@import 'common';
+/*************************** 自定义公共样式  ***************************/
+
+body{
+	margin: 0 auto 2.0em;
+	max-width: 640px;
+	background: $colorecebf4;
+}
+
+a:active,a:hover{
+	// background: #f7f5f5 !important;
+}
+
+.hide{
+	display: none;
+}
+.show{
+	display: block;
+}
+
+.weui-btn{
+	font-size: 16px;
+}

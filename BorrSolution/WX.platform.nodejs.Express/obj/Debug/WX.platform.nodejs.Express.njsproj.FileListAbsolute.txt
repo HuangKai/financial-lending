@@ -1,0 +1,2 @@
+E:\Projects\Orders\Borrowing\Solution\BorrSolution\WX.platform.nodejs.Express\obj\Debug\WX.platform.nodejs.Express.njsprojResolveAssemblyReference.cache
+E:\Projects\Orders\Borrowing\Solution\BorrSolution\WX.platform.nodejs.Express\bin\Microsoft.NodejsTools.WebRole.dll

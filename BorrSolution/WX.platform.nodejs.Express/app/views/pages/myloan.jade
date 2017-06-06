@@ -1,0 +1,93 @@
+extend ../layout
+block content
+	.m-content
+		.page__bd.m-stepone
+			.weui-cells__title 借款金额
+			.weui-cells.weui-cells_radio
+				label.weui-cell.weui-check__label(for="money1")
+					.weui-cell__bd
+						p ￥1000
+					.weui-cell__ft
+						input.weui-check(type="radio", name="loanmoney1" id="money1")
+						span.weui-icon-checked
+				label.weui-cell.weui-check__label(for="money2")
+					.weui-cell__bd
+						p ￥2000
+					.weui-cell__ft
+						input.weui-check(type="radio", name="loanmoney1" id="money2")
+						span.weui-icon-checked
+				label.weui-cell.disable(for="money3")
+					.weui-cell__bd
+						p ￥3000
+					.weui-cell__ft
+						span.weui-icon-info-circle.aa
+			.weui-cells__title 借款周期
+			.weui-cells.weui-cells_radio
+				label.weui-cell.weui-check__label(for="loantime")
+					.weui-cell__bd
+						p 1天（24小时）
+					.weui-cell__ft
+						input.weui-check(type="radio", name="loantime" id="loantime")
+						span.weui-icon-checked
+				label.weui-cell.disable
+					.weui-cell__bd
+						p 2天（48小时）
+					.weui-cell__ft
+						span.weui-icon-info-circle
+				label.weui-cell.disable
+					.weui-cell__bd
+						p 3天（72小时）
+					.weui-cell__ft
+						span.weui-icon-info-circle
+			.weui-cells__title 收款账号
+			.weui-cells
+				.weui-cell.weui-cell_access#payAction(href="javascript:;")
+					.weui-cell__bd
+						p 支付宝
+						span 15983829182
+					.weui-cell__ft
+			a.weui-btn.weui-btn_primary.nextstep(href="javascript:void(0);") 下一步
+			//- 这里是弹窗
+			.weui-mask#iosMask(style="display: none;")
+			.weui-actionsheet#iosActionsheet
+				.weui-actionsheet__menu
+					.weui-actionsheet__cell 支付宝
+					.weui-actionsheet__cell 银行卡
+				.weui-actionsheet__action
+					.weui-actionsheet__cell#iosActionsheetCancel 取消
+			.weui-dialog#iosTip(style="display:none;")
+				.weui-dialog__hd
+					span.weui-dialog__title 即将开放
+				.weui-dialog__bd 敬请期待
+				.weui-dialog__ft
+					a.weui-dialog__btn.weui-dialog__btn_primary#isoTipSure 确定
+		//- 这里是显示订单详情
+		.page__bd.m-steplast.hide
+			.weui-form-preview.front-14
+				.weui-form-preview__hd
+					.weui-form-preview__item
+						label.weui-form-preview__label 借款金额
+						em.weui-form-preview__value ￥1000.00
+				.weui-form-preview__bd
+					.weui-form-preview__item
+						label.weui-form-preview__label 收款姓名
+						span.weui-form-preview__value 王尼玛
+					.weui-form-preview__item
+						label.weui-form-preview__label 收款方式
+						span.weui-form-preview__value 支付宝
+					.weui-form-preview__item
+						label.weui-form-preview__label 收款账号
+						span.weui-form-preview__value 18888282828
+					.weui-form-preview__item
+						label.weui-form-preview__label 借款周期
+						span.weui-form-preview__value 1天
+					.weui-form-preview__item
+						label.weui-form-preview__label 服务费
+						span.weui-form-preview__value ￥10
+					.weui-form-preview__item
+						label.weui-form-preview__label 还款时间
+						span.weui-form-preview__value 2017-9-10 10:10:10
+				.weui-form-preview__ft
+					a.weui-form-preview__btn.weui-form-preview__btn_primary.m-backedit(href="javascript:;") 返回修改
+			a.weui-btn.weui-btn_primary.stepsubmit(href="javascript:void(0);") 提交
+	script(type="text/javascript", src="/build/js/myloan.js")
